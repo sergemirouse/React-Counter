@@ -1,38 +1,110 @@
-.App {
-  text-align: center;
-}
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+/* HEADER */
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+header {
+  height: 193px;
+  border-bottom: 1px solid #e5e5e5;
   display: flex;
-  flex-direction: column;
   align-items: center;
+  font-family: "system-ui";
+}
+
+header svg {
+  width: 70px;
+  height: 80px;
+  fill: #5c48d3;
+  margin-left: 111px;
+}
+
+header span {
+  font-size: 48px;
+  font-weight: 300;
+  margin-left: 65px;
+}
+
+/* MAIN */
+main {
+  height: 75vh;
+}
+
+main section {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  flex-direction: row;
+  border: 1px solid black;
+  margin-top: 150px;
+}
+
+main .minus-plus {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main button {
+  border: inherit;
+  background-color: inherit;
+  /* height: 52.5px;
+  width: 52.5px; */
+  cursor: pointer;
+  fill: black;
+}
+
+main .counter {
+  width: 150px;
+  height: 150px;
+  background-color: #5c48d3;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main span {
+  font-size: 96px;
+  font-family: "Montserrat";
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* RESET */
+
+main .reboot {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+main .reset {
+  width: 150px;
+  height: 60px;
+  background: #5c48d3;
+  border-radius: 15px;
+}
+
+main p {
+  font-size: 32px;
+  font-family: "Montserrat";
+  color: white;
+}
+
+/* FOOTER */
+
+footer {
+  height: 64px;
+  font-family: "Montserrat";
+}
+
+.react,
+a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #5c48d3;
+}
+
+footer div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
