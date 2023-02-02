@@ -19,13 +19,11 @@ function App() {
                 setCounter(counter - 1);
               }}
             >
-              <svg>
+              <svg className="minus">
                 <path d="M48.75 0.375H3.75C1.6793 0.375 0 2.0543 0 4.125V7.875C0 9.9457 1.6793 11.625 3.75 11.625H48.75C50.8207 11.625 52.5 9.9457 52.5 7.875V4.125C52.5 2.0543 50.8207 0.375 48.75 0.375Z" />
               </svg>
             </button>
-            <div className="counter">
-              <span>{counter}</span>
-            </div>
+            <span className="counter">{counter}</span>
             <button
               onClick={() => {
                 setCounter(counter + 1);
@@ -49,16 +47,20 @@ function App() {
         </div>
       </main>
       <footer>
-        <div>
-          <p>
+        <section>
+          <div>
             <span>Made with </span>
-            <span className="react"> React </span>
+            <span className="react">React </span>
             <span>at </span>
-            <a href="https://www.lereacteur.io/">Le Reacteur</a>
+            <a href="https://www.lereacteur.io/" target="blank">
+              Le Reacteur
+            </a>
             <span> by </span>
-            <a href="https://github.com/sergemirouse">Serge Mirouse</a>
-          </p>
-        </div>
+            <a href="https://github.com/sergemirouse" target="blank">
+              Serge Mirouse
+            </a>
+          </div>
+        </section>
       </footer>
     </div>
   );
